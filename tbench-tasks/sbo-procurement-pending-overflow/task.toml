@@ -1,0 +1,31 @@
+version = "1.0"
+[task]
+name = "codimango/sbo-procurement-pending-overflow"
+description = "Fix gas station RL env pending PO accumulation bug causing stockouts"
+authors = [{ name = "Kaleb Alemu", email = "kxa@meta.com" }]
+keywords = ["gas-station", "rl-env", "procurement", "bugfix", "open-source"]
+format = "terminal_bench_single_turn"
+workstream = "swe_public_repo"
+[metadata]
+author_name = "Kaleb Alemu"
+author_email = "kxa@meta.com"
+difficulty = "medium"
+category = "debugging"
+category_usecase = "state_management"
+category_subdomain = "games_and_simulation"
+reward_type = "binary"
+languages = ["python"]
+tags = ["python", "simulation", "bugfix", "rl"]
+expert_time_estimate_min = 20.0
+junior_time_estimate_min = 60.0
+[verifier]
+timeout_sec = 120.0
+[agent]
+timeout_sec = 600.0
+[environment]
+build_timeout_sec = 600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true
