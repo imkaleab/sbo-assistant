@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+dist
+.env.local
+.env.development.local
+.env.production.local
+.vercel
+docker/__pycache__
+docker/*.zip
+docker/traces.jsonl
